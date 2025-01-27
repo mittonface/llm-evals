@@ -26,4 +26,10 @@ jobs:
 
       - name: Run Evals
         run: |
-          npx promptfoo eval --delay 1000 --max-concurrency 1
+          npx promptfoo eval --delay 1000 --max-concurrency 1 --output llm-eval.html
+
+      - name: Upload Evaluation Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: llm-evaluation-results
+          path: llm-eval.html
