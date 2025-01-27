@@ -20,4 +20,4 @@ tests:
     assert:
       # For more information on model-graded evals, see https://promptfoo.dev/docs/configuration/expected-outputs/model-graded
       - type: llm-rubric
-        value:
+        value: there should be fewer than 3 bullet points
