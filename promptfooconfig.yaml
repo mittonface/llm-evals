@@ -21,3 +21,6 @@ tests:
       # For more information on model-graded evals, see https://promptfoo.dev/docs/configuration/expected-outputs/model-graded
       - type: llm-rubric
         value: there should be fewer than 3 bullet points
+
+      - type: llm-rubric
+        value: the response should be in the form of a lymric
