@@ -24,3 +24,9 @@ tests:
 
       - type: llm-rubric
         value: should provide a small amount of context about what student growth percentiles are
+
+  - vars:
+      data: file://tests/sgp_tests.txt
+    assert:
+      - type: llm-rubric
+        value: should contain at least one word in japanese
