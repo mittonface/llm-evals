@@ -1,0 +1,15 @@
+data: |
+  Content,Comparison Value,Filters,Fall to Fall 24-25 Numerator,Fall to Fall 24-25 Denominator,Fall to Fall 24-25 Value
+  Overall,10th Grade,,45,80,56.3
+  Overall,11th Grade,,53,75,70.7
+  Overall,12th Grade,,38,69,55.1
+  Overall,1st Grade,,16,28,57.1
+  Overall,2nd Grade,,70,130,53.8
+  Overall,3rd Grade,,90,143,62.9
+  Overall,4th Grade,,101,157,64.3
+  Overall,5th Grade,,71,131,54.2
+  Overall,6th Grade,,86,138,62.3
+  Overall,7th Grade,,65,109,59.6
+  Overall,8th Grade,,69,109,63.3
+  Overall,9th Grade,,33,80,41.3
+  Overall,Kindergarten,,,,

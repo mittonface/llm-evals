@@ -5,8 +5,7 @@
 description: "My eval"
 
 prompts:
-  - "Write a tweet about {{topic}}"
-  - "Write a concise, funny tweet about {{topic}}"
+  - file://prompts/summarize_sgp.md
 
 providers:
   - id: bedrock:us.anthropic.claude-3-5-sonnet-20241022-v2:0
@@ -17,24 +16,8 @@ defaultTest:
 
 tests:
   - vars:
-      topic: bananas
-
-  - vars:
-      topic: avocado toast
-    assert:
-      # For more information on assertions, see https://promptfoo.dev/docs/configuration/expected-outputs
-
-      # Make sure output contains the word "avocado"
-      - type: icontains
-        value: avocado
-
-      # Prefer shorter outputs
-      - type: javascript
-        value: 1 / (output.length + 1)
-
-  - vars:
-      topic: new york city
+      data: file://tests/sgp_tests.txt
     assert:
       # For more information on model-graded evals, see https://promptfoo.dev/docs/configuration/expected-outputs/model-graded
       - type: llm-rubric
-        value: ensure that the output is funny
+        value:
