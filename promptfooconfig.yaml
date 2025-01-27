@@ -7,12 +7,9 @@ description: "My eval"
 prompts:
   - "Write a tweet about {{topic}}"
   - "Write a concise, funny tweet about {{topic}}"
-  
 
 providers:
-  - "openai:gpt-4o-mini"
-  - "openai:gpt-4o"
-  
+  - id: bedrock:us.anthropic.claude-3-5-sonnet-20241022-v2:0
 
 tests:
   - vars:
@@ -37,4 +34,3 @@ tests:
       # For more information on model-graded evals, see https://promptfoo.dev/docs/configuration/expected-outputs/model-graded
       - type: llm-rubric
         value: ensure that the output is funny
-
