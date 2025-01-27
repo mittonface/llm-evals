@@ -11,6 +11,10 @@ prompts:
 providers:
   - id: bedrock:us.anthropic.claude-3-5-sonnet-20241022-v2:0
 
+defaultTest:
+  options:
+    provider: bedrock:us.anthropic.claude-3-5-sonnet-20241022-v2:0
+
 tests:
   - vars:
       topic: bananas
