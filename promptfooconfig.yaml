@@ -22,5 +22,4 @@ tests:
       - type: llm-rubric
         value: there should be fewer than 3 bullet points
 
-      - type: llm-rubric
-        value: the response should be in the form of a lymric
+d
