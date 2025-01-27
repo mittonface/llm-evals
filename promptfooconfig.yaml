@@ -21,3 +21,6 @@ tests:
       # For more information on model-graded evals, see https://promptfoo.dev/docs/configuration/expected-outputs/model-graded
       - type: llm-rubric
         value: there should be 3 or fewer bullet points
+
+      - type: llm-rubric
+        value: should provide a small amount of context about what student growth percentiles are
